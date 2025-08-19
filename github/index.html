@@ -16,15 +16,15 @@
 
 <body>
     <header>
-        <navbar>
-            <div class="navbar flex justify-between items-center px-8 py-8 mx-auto max-w-[1140px] max-h-[71] w-full">
+        <navbar class="md:w-[361px]">
+            <div class="navbar flex justify-between items-center px-8 py-8 mx-auto max-w-[1140px] max-h-[71] w-full md:">
 
                 <img src="logo.png" alt="" class="logo padding-20px">
                 <div class="nav-links">
-                    <ul class="items-center flex gap-4">
-                        <li><a href="" class="font-semibold text-[#252432]">Home</a></li>
-                        <li><a href="">shop</a></li>
-                        <li><a href="">About us</a></li>
+                    <ul class=" flex items-center gap-4">
+                        <li><a href="" class="font-semibold text-[#252432] hidden md:flex">Home</a></li>
+                        <li><a href=""class="hidden md:flex">shop</a></li>
+                        <li><a href="" class="hidden md:flex">About us</a></li>
                         <li class="cart text-black">
                             <i class="fa-solid fa-cart-shopping"></i>
                             Cart($56)
@@ -37,8 +37,8 @@
         <!-- navbar ends -->
 
     </header>
-    <section class="first banner flex justify-between items-start px-8 py-8 
-    w-full max-w-[1140px] h-[461px] mx-auto ">
+    <section class="first banner flex flex-col-reverse md:flex-row justify-between items-start px-8 py-8 
+    w-full max-w-[1140px] h-auto md:h-auto mx-auto ">
         <div class="banner-text max-w-[570px] mt-24 w-full">
             <h1>
                 <span class="always font-['Noto_Serif'] text-black text-5xl"> ALWAYS</span> <span
@@ -54,6 +54,7 @@
         </div>
         <div class="banner-img max-w-570px w-full max-h-355px mx-auto">
             <img src="hero-flower.png" alt="">
+        </div>
 
 
 
@@ -76,13 +77,13 @@
             </div>
             <!-- card-1 -->
         </div>
-        <div class="card grid grid-cols-4 gap-4 px-8 py-8 mx-auto max-w-[1140px]  w-full">
+        <div class="card grid grid-cols-2 md:grid-cols-4  gap-4 px-8 py-8 mx-auto max-w-[1140px]  w-full">
             <div class="flower">
                 <img src="sample-flower-image.png" alt="" class="flower-image">
                 <h3 class="flowername font-['Inter']  text-[#111111] text-center"> Lily Blossom</h3>
                 <p class="flowerprice font-['Inter'] text-[#111111] font-extrabold text-center">20USD</p>
                 <button
-                    class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] ">Add
+                    class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] mx-auto block ">Add
                     to Cart</button>
 
             </div>
@@ -93,7 +94,7 @@
                 <h3 class="flowername font-['Inter']  text-[#111111] text-center" "> Lily Blossom</h3>
                 <p class=" flowerprice font-['Inter'] text-[#111111] font-extrabold text-center">20USD</p>
                     <button
-                        class="add-to-cart font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] ">Add
+                        class="add-to-cart font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] mx-auto block ">Add
                         to Cart</button>
 
             </div>
@@ -103,7 +104,7 @@
                 <h3 class="flowername font-['Inter']  text-[#111111] text-center""> Lily Blossom</h3>
                 <p class=" flowerprice font-['Inter'] text-[#111111] font-extrabold text-center">20USD</p>
                     <button
-                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] ">Add
+                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] mx-auto block ">Add
                         to Cart</button>
 
             </div>
@@ -113,7 +114,7 @@
                 <h3 class="flowername font-['Inter']  text-[#111111] text-center" "> Lily Blossom</h3>
                 <p class=" flowerprice font-['Inter'] text-[#111111] font-extrabold text-center">20USD</p>
                     <button
-                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] ">Add
+                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] mx-auto block ">Add
                         to Cart</button>
             </div>
             <!-- card-5 -->
@@ -122,7 +123,7 @@
                 <h3 class="flowername font-['Inter']  text-[#111111] text-center""> Lily Blossom</h3>
                 <p class=" flowerprice font-['Inter'] text-[#111111] font-extrabold text-center">20USD</p>
                     <button
-                        class="add-to-carttext-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] ">Add
+                        class="add-to-carttext-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px]  mx-auto block">Add
                         to Cart</button>
             </div>
             <!-- card-6 -->
@@ -131,7 +132,7 @@
                 <h3 class="flowername font-['Inter']  text-[#111111] text-center" "> Lily Blossom</h3>
                 <p class=" flowerprice font-['Inter'] text-[#111111] font-extrabold text-center">20USD</p>
                     <button
-                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] ">Add
+                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] mx-auto block ">Add
                         to Cart</button>
             </div>
             <!-- card-7 -->
@@ -140,7 +141,7 @@
                 <h3 class="flowername font-['Inter']  text-[#111111] text-center""> Lily Blossom</h3>
                 <p class=" flowerprice font-['Inter'] text-[#111111] font-extrabold text-center">20USD</p>
                     <button
-                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] ">Add
+                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] mx-auto block ">Add
                         to Cart</button>
             </div>
             <!-- card-8 -->
@@ -149,7 +150,7 @@
                 <h3 class="flowername  font-['Inter']  text-[#111111] text-center" "> Lily Blossom</h3>
                 <p class=" flowerprice font-['Inter'] text-[#111111] font-extrabold text-center">20USD</p>
                     <button
-                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] ">Add
+                        class="add-to-cart text-center font-['Inter'] text-[#FFFFFF] bg-[#E95A08] rounded lg transition w-[150px] h-[40px] mx-auto block">Add
                         to Cart</button>
             </div>
         </div>
@@ -163,11 +164,11 @@
     <!-- card section done-->
 
 
-    <section class="badge flex justify-between items-center px-8 py-20 my-20 mx-auto max-w-[1140px] w-full">
-        <div class="elements flex justify-between items-start gap-20 w-full">
-            <div class="florist relative w-full h-[597px]">
+    <section class="badge flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-10 md:py-20 my-10 md:my-20 mx-auto max-w-[1140px] w-full">
+        <div class="elements flex flex-col md:flex-row justify-between items-start gap-10 md:gap-20 w-full">
+            <div class="florist relative w-full md:w-auto h-auto flex justify-center">
                 <img src="flower-store.png" alt="" class="flower-store w-[540px] h-[597px] ">
-                <div class="absolute -top-32 -right-28 w-[286px] h-[286px] rounded-full flex"><img
+                <div class="absolute -top-32 -right-28 hidden md:flex w-[286px] h-[286px] rounded-full "><img
                         src="trusted-badge.png" alt="" class="trusted-badge w-[286px] h-[286px] "></div>
 
             </div>
@@ -208,11 +209,11 @@
         </div>
 
     </section>
-    <section class="f-box max-w-[1140px]  px-10  mx-auto flex justify-between items-start gap-4 my-20">
-        <div class="wholepicture flex justify-between items-start gap-4">
+    <section class="f-box max-w-[1140px] px-4 md:px-10  mx-auto flex flex-col md:flex-row justify-between items-start gap-4 my-10 md:my-20">
+        <div class="wholepicture flex flex-col md:flex-row  justify-between items-start gap-4 w-full">
 
 
-            <div class="twoimg gap-4 flex flex-col w-1/3">
+            <div class="twoimg gap-4 flex flex-col w-full  md:w-1/3">
 
                 <div class="relative rounded-lg overflow-hidden">
                     <img src="deal-bloom.png" alt="" class="bloom-image object-cover gap-2px rounded-lg w-full h-full">
@@ -238,7 +239,7 @@
             </div>
 
             <!--big image-->
-            <div class="timage relative w-2/3  rounded-lg overflow-hidden">
+            <div class="timage relative w-full md:w-2/3  rounded-lg overflow-hidden">
                 <img src="deal-zabo.png" alt="Zabo Plant" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/50"></div>
                 <div class="absolute inset-0 flex flex-col justify-center items-center text-white z-10">
@@ -252,8 +253,8 @@
 
     </section>
     <!--latest deals section ends-->
-    <section class="last-banner w-[1440px] h-[533px] mx-auto max-w-[1440px] max-h-[533px]  relative mb-20">
-        <div class="banner-container ">
+    <section class="last-banner relative w-full max-w-[1440px] mx-auto min-h-[300px] md:min-h-[533px] mb-20">
+        <div class="banner-container w-full h-full">
             <div class="bimg">
                 <img src="news-letter-bg.png" alt="" class="w-full h-full object-cover absolute inset-0">
                 <div class="absolute inset-0 bg-[#07334F]/40"></div>
@@ -283,8 +284,8 @@
 
 </main>
 
-<footer class="mb-12">
-    <section class="foot flex justify-between items-start mx-auto max-w-[1140px] w-full">
+<footer class="mb-12 px-6">
+    <section class="foot flex flex-col md:flex-row justify-between items-start mx-auto max-w-[1140px] w-full gap-8">
         <div class="logo-header">
             <img src="logo.png" alt="" class="logo-footer">
             <p class="text-black/50 font-['Inter'] text-[16px]">Indulge your senses with the<br>
@@ -292,8 +293,8 @@
                 flower shop. </p>
 
         </div>
-        <div class="footer-links">
-            <ul class="gap-4 grid grid-cols-2 gap-x-8 gap-y-3">
+        <div class="footer-links md:w-1/3">
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8">
                 <li><a href="" class="text-black/50 font-['Inter'] text-[16px]">Home</a></li>
                 <li><a href="" class="text-black/50 font-['Inter'] text-[16px]">About Us</a></li>
                 <li><a href="" class="text-black/50 font-['Inter'] text-[16px]">Blog</a></li>
@@ -307,7 +308,7 @@
             </ul>
 
         </div>
-        <div class="social-icons flex gap-4">
+        <div class="social-icons flex gap-4 md:w-1/3">
             <img src="icon-linkedin.png" alt="" class="w-6 h-6">
             <img src="icon-twitter.png" alt="" class="w-6 h-6">
             <img src="icon-facebook.png" alt="" class="w-6 h-6">
